@@ -1,0 +1,161 @@
+:root{
+    --min-color:#2196f3;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Open sans,sans-serif;
+}
+.game{
+    background-color: #eee;
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+.container{
+    margin: auto;
+    max-width: 900px;
+}
+.name{
+    background-color:var(--min-color);
+    color: white;
+    padding: 20px;
+    font-size: 25px ;
+    text-align: center;
+    font-weight: bold;
+}
+.message{
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+}
+.message span{
+    font-weight: bold;
+    color: #009688;
+}
+.message span::before{
+    content: '[';
+}
+.message span::after{
+    content: ']';
+}
+.start{
+    font-size: 20px ;
+    font-weight: bold;
+    text-align: center;
+    background-color:rgb(20, 133, 95);
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+.the-word{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    user-select: none;
+    color: var(--min-color);
+}
+.input{
+    margin: 15px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 3px solid var(--min-color);
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 6px;
+    caret-color: var(--min-color);
+}
+.input:focus{
+    outline: none;
+}
+.upcomin-word{
+    background-color: white;
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.upcomin-word div{
+    background-color: var(--min-color);
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+}
+.control span{
+    font-weight: bold;
+    color: #009688;
+}
+.finish{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+.finish .good{
+    background-color: rgb(142, 212, 158);
+    color: var(--min-color);
+}
+.finish .bad{
+    color: red;
+}
+#level {
+  width: 200px;           /* العرض */
+  padding: 10px;          /* مسافة داخلية */
+  font-size: 16px;        /* حجم الخط */
+  border: 2px solid #4CAF50;  /* حدود */
+  border-radius: 8px;     /* زوايا مدورة */
+  background-color: #f9f9f9; /* لون الخلفية */
+  color: #333;            /* لون النص */
+  cursor: pointer;        /* شكل الماوس */
+  outline: none;          /* يشيل الإطار الأزرق وقت الكليك */
+    transition: 0.5s;
+}
+#level:hover {
+  border-color: #2e7d32;
+}
+#level:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px #1b5e20;
+}
+.btn{
+    border: rgb(163, 31, 31);
+    background-color: rgb(206, 66, 66);
+    padding: 12px 15px ;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color:rgb(214, 86, 86);
+
+}
+.user{
+    border: 3px solid var(--min-color);
+    padding: 10px 19px;
+    margin-top: 12px;
+    font-size: 25px ;
+    font-weight: bold;
+    text-align: center;
+}
+ .user:focus{
+    outline: none;
+ }
